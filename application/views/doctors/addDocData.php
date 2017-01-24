@@ -73,8 +73,8 @@
 
 		<div class="panel panel-plain panel-rounded">
 							<div class="panel-heading borderless">
-								<h3 class="panel-title">Basic Inputs</h3>
-								<p class="subtitle text-uppercase m-t">Basic Form Elements</p>
+								<h3 class="panel-title">Basic Details</h3>
+								<p class="subtitle text-uppercase m-t">Personal</p>
 								<!-- Begin Panel Toolbar -->
 								<div class="panel-toolbar">
 									<ul class="list-inline m-a-0">
@@ -87,32 +87,32 @@
 							</div><!-- /.panel-heading -->
 							<div class="panel-body p-t-xs">
 
-								<p>Individual form controls automatically receive some global styling. All textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code> and <code>&lt;select&gt;</code> elements with <code>.form-control</code> are set to <code>width: 100%;</code> by default. Wrap labels and controls in <code>.form-group</code> for optimum spacing.</p><br>
+					
 
 								<form>
 
 									<div class="row">
 										<div class="col-md-6">
 											<div class="form-group">
-												<label>Default Text Input</label>
+												<label>Doctor's Name</label>
 												<input type="text" class="form-control">
 											</div>
 										</div><!-- /.col-md-6 -->
 										<div class="col-md-6">
 											<div class="form-group">
-												<label>Password</label>
-												<input type="password" class="form-control">
+												<label>Age</label>
+												<input type="text" class="form-control">
 											</div>
 										</div><!-- /.col-md-6 -->
 									</div><!-- /.row -->
 
 									<div class="row">
 										<div class="col-md-6">
-											<div class="form-group">
-												<label>Input with Placeholder</label>
-												<input type="text" class="form-control" placeholder="Something here...">
-											</div>
-										</div><!-- /.col-md-6 -->
+										<div class="form-group">
+											<label>Default Picker</label>
+											<input type="text" class="form-control rs-datepicker" placeholder="MM/DD/YYYY">
+										</div><!-- /.form-group -->
+									</div><!-- /.col-md-3 -->
 										<div class="col-md-6">
 											<div class="form-group">
 												<label>Email Address</label>
@@ -301,11 +301,14 @@
 	<script>
 	window.jQuery || document.write('<script src="../dist/js/vendor/jquery.min.js"><\/script>')
 	</script> -->
-	<script src="../dist/js/vendor.js"></script>
-	<script src="../dist/js/plugins.js"></script>
+	<script src="<?php echo base_url('javascripts/vendor.js');?>"></script>
+	<script src="<?php echo base_url('javascripts/plugins.js');?>"></script>
 	
 
 	<!-- Page Plugins -->
+	<script src="<?php echo base_url('plugins/datepicker/js/bootstrap-datepicker.min.js');?>"></script>
+	<script src="<?php echo base_url('plugins/datepicker/datepicker-example.js');?>"></script><!-- Example -->
+
 	<script src="../dist/plugins/chart-js/Chart.bundle.min.js"></script>
 	<script src="../dist/plugins/easypie/jquery.easypiechart.min.js"></script>
 	<script src="../dist/plugins/morris/morris.min.js"></script>

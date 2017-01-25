@@ -23,6 +23,7 @@
 	<link rel="stylesheet" href="<?php echo base_url('assets/icons/entypo/entypo.min.css');?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/icons/fa/css/font-awesome.min.css');?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/icons/flag-icon/css/flag-icon.min.css');?>">
+
 	<link rel="stylesheet" href="<?php echo base_url('assets/icons/material-icon/material-icon.min.css');?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/icons/weather-icon/css/weather-icons.min.css');?>">
 
@@ -52,7 +53,7 @@
 
 		<!-- BEGIN MAIN CONTENT -->
 		<article class="rs-content-wrapper">
-			<div class="rs-content">
+			<div class="rs-content" >
 				<div class="rs-inner">
 		<div class="rs-dashhead m-b-lg">
 						<div class="rs-dashhead-content">
@@ -109,7 +110,7 @@
 									<div class="row">
 										<div class="col-md-6">
 										<div class="form-group">
-											<label>Default Picker</label>
+											<label>Date Of Birth</label>
 											<input type="text" class="form-control rs-datepicker" placeholder="MM/DD/YYYY">
 										</div><!-- /.form-group -->
 									</div><!-- /.col-md-3 -->
@@ -124,8 +125,8 @@
 									<div class="row">
 										<div class="col-md-6">
 											<div class="form-group">
-												<label>Input Number</label>
-												<input type="number" class="form-control">
+												<label>Address</label>
+										<textarea class="form-control" placeholder="Textarea" style="height: 100px;"></textarea>
 											</div>
 										</div><!-- /.col-md-6 -->
 										<div class="col-md-6">
@@ -136,144 +137,16 @@
 										</div><!-- /.col-md-6 -->
 									</div><!-- /.row -->
 
-									<div class="row">
-										<div class="col-md-6">
-											<div class="form-group">
-												<label>Input Search</label>
-												<input type="search" class="form-control">
-											</div>
-										</div><!-- /.col-md-6 -->
-										<div class="col-md-6">
-											<div class="form-group">
-												<label>Input Tel</label>
-												<input type="tel" class="form-control">
-											</div>
-										</div><!-- /.col-md-6 -->
-									</div><!-- /.row -->
+									
 
-									<div class="form-group">
-										<label>Input Range</label>
-										<input type="range" class="form-control">
+									
+
+
+									
+									
+								
 									</div>
-
-									<div class="row">
-										<div class="col-md-6">
-											<div class="form-group">
-												<label>Read only</label>
-												<input type="text" class="form-control" placeholder="Read only" readonly>
-											</div>
-										</div><!-- /.col-md-6 -->
-										<div class="col-md-6">
-											<div class="form-group">
-												<label>Disabled</label>
-												<input type="text" class="form-control" placeholder="Disabled" disabled>
-											</div>
-										</div><!-- /.col-md-6 -->
-									</div><!-- /.row -->
-
-									<div class="form-group">
-										<label>Textarea</label>
-										<textarea class="form-control" placeholder="Textarea" style="height: 100px;"></textarea>
-									</div>
-									<div class="form-group">
-										<label>Select</label>
-										<select class="form-control">
-											<option selected>Kolojengking</option>
-											<option>Tonggeng</option>
-											<option>Bekicot</option>
-										</select>
-									</div>
-									<div class="form-group">
-										<label>Multiple Select</label>
-										<select multiple class="form-control">
-											<option selected>Kolojengking</option>
-											<option>Tonggeng</option>
-											<option>Bekicot</option>
-											<option>Walang Sangit</option>
-											<option>Undur-undur</option>
-										</select>
-									</div>
-
-									<div class="row">
-										<div class="col-md-4">
-											<div class="form-group">
-												<label>Default File Input</label>
-												<input type="file" class="form-control">
-											</div>
-										</div><!-- /.col-md-4 -->
-										<div class="col-md-4">
-											<div class="form-group">
-												<label>Custom File Input</label>
-												<input type="file" class="filestyle" data-buttonText="Find file">
-											</div>
-										</div><!-- /.col-md-4 -->
-										<div class="col-md-4">
-											<div class="form-group">
-												<label>Custom File Input Left</label>
-												<input type="file" class="filestyle" data-buttonText="Browse"  data-buttonName="btn-success" data-buttonBefore="true" data-placeholder="No file"  data-iconName="glyphicon glyphicon-picture">
-											</div>
-										</div><!-- /.col-md-4 -->
-									</div><!-- /.row -->
-
-									<div class="row">
-										<div class="col-md-6">
-											<div class="form-group">
-												<label>Help Block Left</label>
-												<input type="text" class="form-control">
-												<p class="help-block">Example block-level help text here.</p>
-											</div>
-										</div><!-- /.col-md-6 -->
-										<div class="col-md-6">
-											<div class="form-group">
-												<label>Help Block Right</label>
-												<input type="text" class="form-control">
-												<p class="help-block text-right">Example block-level help text here.</p>
-											</div>
-										</div><!-- /.col-md-6 -->
-										<div class="col-md-3">
-											<div class="form-group">
-												<label>Help Block Label Left</label>
-												<input type="text" class="form-control">
-												<p class="help-block"><span class="label label-success">Example block-level help text here.</span></p>
-											</div>
-										</div><!-- /.col-md-3 -->
-										<div class="col-md-3">
-											<div class="form-group">
-												<label>Help Block Label Right</label>
-												<input type="text" class="form-control">
-												<p class="help-block text-right"><span class="label label-danger">Example block-level help text here.</span></p>
-											</div>
-										</div><!-- /.col-md-3 -->
-										<div class="col-md-3">
-											<div class="form-group">
-												<label>Help Block Label Center</label>
-												<input type="text" class="form-control">
-												<p class="help-block text-center"><span class="label label-info">Example block-level help text here.</span></p>
-											</div>
-										</div><!-- /.col-md-3 -->
-										<div class="col-md-3">
-											<div class="form-group">
-												<label>Help Block Label Full</label>
-												<input type="text" class="form-control">
-												<p class="help-block text-center"><span class="label label-warning label-block">Example block-level help text here.</span></p>
-											</div>
-										</div><!-- /.col-md-3 -->
-									</div><!-- /.row -->
-
-									<div class="form-group">
-										<label>Input Column Sizing</label>
-										<div class="row">
-											<div class="col-md-3">
-												<input type="text" class="form-control" placeholder=".col-md-3">
-											</div>
-											<div class="col-md-5">
-												<input type="text" class="form-control" placeholder=".col-md-5">
-											</div>
-											<div class="col-md-4">
-												<input type="text" class="form-control" placeholder=".col-md-4">
-											</div>
-										</div><!-- /.row -->
-									</div>
+								<div align="center"><button type="Submit" class="btn btn-primary  active m-b">Submit</button></div>
 
 								</form>
 							</div><!-- .panel-body -->
@@ -287,7 +160,7 @@
 
 
 		<!-- BEGIN FOOTER -->
-		<?php $this->load->view('layout/footer');?>
+		<!-- <?php $this->load->view('layout/footer');?> -->
 		<!-- END FOOTER -->
 
 
@@ -301,20 +174,31 @@
 	<script>
 	window.jQuery || document.write('<script src="../dist/js/vendor/jquery.min.js"><\/script>')
 	</script> -->
-	<script src="<?php echo base_url('javascripts/vendor.js');?>"></script>
-	<script src="<?php echo base_url('javascripts/plugins.js');?>"></script>
+	<script src="<?php echo base_url('assets/javascripts/vendor.js');?>"></script>
+	<script src="<?php echo base_url('assets/javascripts/plugins.js');?>"></script>
 	
 
 	<!-- Page Plugins -->
-	<script src="<?php echo base_url('plugins/datepicker/js/bootstrap-datepicker.min.js');?>"></script>
-	<script src="<?php echo base_url('plugins/datepicker/datepicker-example.js');?>"></script><!-- Example -->
+	<script src="<?php echo base_url('assets/plugins/datepicker/js/bootstrap-datepicker.min.js');?>"></script>
+	<script src="<?php echo base_url('assets/plugins/datepicker/datepicker-example.js');?>"></script><!-- Example -->
 
-	<script src="../dist/plugins/chart-js/Chart.bundle.min.js"></script>
-	<script src="../dist/plugins/easypie/jquery.easypiechart.min.js"></script>
-	<script src="../dist/plugins/morris/morris.min.js"></script>
-	<script src="../dist/plugins/sparkline/jquery.sparkline.min.js"></script>
+
+	<script src="<?php echo base_url('assets/plugins/sparkline/jquery.sparkline.min.js');?>"></script>
 
 	<!-- Template Js -->
+	<script src="<?php echo base_url('assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js');?>"></script>
+	<script src="<?php echo base_url('assets/plugins/bootstrap-switch/bootstrap-switch-example.js');?>"></script>
+	<script src="<?php echo base_url('assets/plugins/cleave/cleave.min.js');?>"></script>
+	<script src="<?php echo base_url('assets/plugins/cleave/addons/cleave-phone.au.js');?>"></script>
+	<script src="<?php echo base_url('assets/plugins/cleave/cleave-example.js');?>"></script>
+	<script src="<?php echo base_url('assets/plugins/masked-input/jquery.maskedinput.min.js');?>"></script>
+	<script src="<?php echo base_url('assets/plugins/masked-input/maskedinput-example.js');?>"></script>
+	<script src="<?php echo base_url('assets/plugins/maxlength/bootstrap-maxlength.min.js');?>"></script>
+	<script src="<?php echo base_url('assets/plugins/maxlength/maxlength-example.js');?>"></script>
+	<script src="<?php echo base_url('assets/plugins/selectize/js/standalone/selectize.min.js');?>"></script>
+	<script src="<?php echo base_url('assets/plugins/selectize/selectize-example.js');?>"></script>
+
+
 	<script src="<?php echo base_url('assets/javascripts/apps.js');?>"></script>
 	<script src="<?php echo base_url('assets/javascripts/dashboard.js');?>"></script>
 	<script src="<?php echo base_url('assets/javascripts/layout-horizontal.js');?>"></script>
